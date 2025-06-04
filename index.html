@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descarga de Libros</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .book-section {
+      margin-bottom: 60px;
+      width: 100%;
+      max-width: 800px;
+    }
+    .preview {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 600px) {
+      .preview {
+        aspect-ratio: 3 / 4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Vista previa y descarga de libros</h1>
+
+  <!-- Libro 1 -->
+  <div class="book-section">
+    <iframe class="preview"
+            src="https://github.com/etnico33/libros/raw/62613b827a448fe45a17c234abc56859023ae2f1/libro1_mav.pdf"
+            type="application/pdf">
+    </iframe><br>
+    <a class="button" href="https://github.com/etnico33/libros/raw/62613b827a448fe45a17c234abc56859023ae2f1/libro1_mav.pdf" download>
+      Descargar Libro 1
+    </a>
+  </div>
+
+  <!-- Libro 2 -->
+  <div class="book-section">
+    <iframe class="preview"
+            src="https://github.com/etnico33/libros/raw/62613b827a448fe45a17c234abc56859023ae2f1/libro2_mav.pdf"
+            type="application/pdf">
+    </iframe><br>
+    <a class="button" href="https://github.com/etnico33/libros/raw/62613b827a448fe45a17c234abc56859023ae2f1/libro2_mav.pdf" download>
+      Descargar Libro 2
+    </a>
+  </div>
+</body>
+</html>
